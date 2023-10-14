@@ -1,0 +1,63 @@
+* {
+  display: flexbox;
+  font-family: monospace;
+  color: whitesmoke;
+  position: relative;
+}
+
+body {
+  margin: 0;
+}
+main {
+  position: relative;
+}
+h1 {
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  font-size: 50px;
+}
+p {
+  padding: 10px;
+  margin: 15px;
+  font-size: xx-large;
+  text-align: center;
+}
+
+#bottom {
+  position: fixed;
+  bottom: 0;
+}
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  border: none;
+}
+
+/*loading animation at the top*/
+
+.loading::after {
+  display: inline-block;
+  animation: load-dots steps(1, end) 2.5s infinite;
+  content: "";
+}
+
+@keyframes load-dots {
+  0% {
+    content: "";
+  }
+  25% {
+    content: ".";
+  }
+  50% {
+    content: "..";
+  }
+  75% {
+    content: "...";
+  }
+  100% {
+    content: "";
+  }
+}
