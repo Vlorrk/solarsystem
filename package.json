@@ -3,10 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "main.js",
-  "type": "module",
-  "scripts": {
-    "test": "jest --watchAll --verbose"
-  },
+  "scripts": {},
   "author": "",
   "license": "ISC",
   "dependencies": {
